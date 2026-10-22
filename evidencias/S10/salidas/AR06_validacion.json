@@ -1,0 +1,17 @@
+{
+  "elementos": 78,
+  "vistas": 9,
+  "relaciones": 60,
+  "reglas_archimate": "60 relaciones permitidas por matriz ArchiMate 3.2",
+  "brechas": 12,
+  "entidades": 6,
+  "secuencia_valida": true,
+  "deteccion_dependencia_inexistente_y_ciclo": true,
+  "esfuerzo_estimado_dias_persona": 130,
+  "limites": [
+    "Pedido sin conteos por sistema",
+    "Proveedor y Trabajador con sistemas, fuentes y dueños no informados",
+    "Sin PETI previo de Andina para trazabilidad completa",
+    "Validación contra el caso ficticio; no auditoría ni aprobación de la organización"
+  ]
+}

@@ -1,0 +1,21 @@
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+[Core] Loaded model: 'Andina del Sur � arquitectura actual y propuesta'
+[HTMLReport] Creating report from 'Andina del Sur � arquitectura actual y propuesta' to C:\Users\USUARIO\Documents\Codex\2026-10-22\sab\work\archi-report
+[HTMLReport] Copying files...
+[HTMLReport] Copying hints...
+[HTMLReport] Creating files...
+[HTMLReport] Generating image for View 1 of 9
+[HTMLReport] Generating image for View 2 of 9
+[HTMLReport] Generating image for View 3 of 9
+[HTMLReport] Generating image for View 4 of 9
+[HTMLReport] Generating image for View 5 of 9
+[HTMLReport] Generating image for View 6 of 9
+[HTMLReport] Generating image for View 7 of 9
+[HTMLReport] Generating image for View 8 of 9
+[HTMLReport] Generating image for View 9 of 9
+[HTMLReport] Creating files...
+[HTMLReport] Finalising...
+[HTMLReport] Report generated!
+[Core] Saved model to 'C:\Users\USUARIO\Documents\Codex\2026-10-22\sab\work\validated.archimate'

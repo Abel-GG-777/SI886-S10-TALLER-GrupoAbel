@@ -1,0 +1,13 @@
+﻿id,capa,tipo,elemento_actual_id,elemento_objetivo_id,actual,objetivo,origen,paquete,esfuerzo_dias_persona,dependencias,justificacion_esfuerzo
+B01,Negocio,Modificar,a-p1,t-p1,Registro y aprobación por el mismo usuario,Roles separados y control de operaciones fraccionadas,FICHA §G; objetivo TI §A; P01,PT01,8,,Reconfiguración y pruebas de perfiles
+B02,Negocio,Modificar,a-p5,t-p5,Segregación inexistente en pagos,Doble control con usuarios distintos,FICHA §H; P01,PT01,6,B01,Revisión de flujo y pruebas de autorización
+B03,Datos,Modificar,a-d-cliente,t-d-cliente,Sin dueño; 500 bodegas no conciliadas,ERP conciliado y dueño formalmente designado,Inventario §5; P02,PT02,12,,"Perfilado, depuración y aceptación comercial"
+B04,Datos,Modificar,a-d-stock,t-d-stock,Fuente de hecho en libro; diferencia 4.7 %,Fuente ERP rehabilitada con conciliación,Inventario §5; objetivo TI; P02,PT03,15,B03;B11,"Reglas de conciliación, carga y pruebas"
+B05,Aplicación,Modificar,a-portal,t-portal,Portal sin mantenimiento y pedidos redigitados,Portal mantenido e integrado al ERP,"Inventario §§2,4; OE-01,OE-02; P03,P05",PT04,20,B03;B04;B11,"Interfaz, mantenimiento, pruebas y aceptación"
+B06,Aplicación,Modificar,a-movil,t-movil,Sincronización nocturna; precios discrepantes,Sincronización con frescura acordada y precios únicos,"Inventario §§4,5; OE-02; P03",PT04,10,B03;B04;B11,"Acuerdo de datos, configuración y prueba con proveedor"
+B07,Tecnología,Agregar,a-disco,t-backup,Disco local y restauración no probada,Copias separadas y recuperación verificada,FICHA §F; P04,PT05,10,,"Diseño, copia y ensayo de restauración"
+B08,Tecnología,Modificar,a-lan,t-lan,Red plana con invitados,Segmentos diferenciados y aislamiento de invitados,"Inventario §6; P01,P04",PT05,8,,Diseño lógico y pruebas de aislamiento
+B09,Tecnología,Agregar,a-ilo,t-ilo,Enlace a Ilo sin respaldo,Contingencia de enlace con prueba de conmutación,Inventario §6; P04,PT05,6,,"Factibilidad, contratación y pruebas; plazo proveedor no incluido"
+B10,Aplicación,Sustituir,a-mesa,t-mesa,Hoja parcial y sin medición de acuerdos,Registro central con clasificación y seguimiento,"Mesa §§1–5; OE-01,OE-02; P06",PT06,12,,Configuración del registro y diseño de métricas
+B11,Aplicación,Sustituir,a-ubic,t-almacen,Ubicaciones gestionadas en libro sin integración,Rehabilitar módulo y retirar libro tras aceptación,"Inventario §§2,4; objetivo TI; P02,P03",PT03,18,B01;B03;B07,"Ajuste funcional, migración y piloto"
+B12,Negocio,Modificar,a-cambio,t-cambio,Autorización informal y pruebas variables,"Cambios con registro, pruebas y retorno",Mesa §7; P05,PT06,5,B10,Diseño de flujo y piloto de cambios

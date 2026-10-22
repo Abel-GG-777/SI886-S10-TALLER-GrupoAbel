@@ -1,0 +1,7 @@
+﻿paquete,esfuerzo_dias_persona,brechas,dependencias
+PT01,14,B01;B02,
+PT02,12,B03,
+PT03,33,B04;B11,PT01;PT02;PT05
+PT04,30,B05;B06,PT02;PT03
+PT05,24,B07;B08;B09,
+PT06,17,B10;B12,

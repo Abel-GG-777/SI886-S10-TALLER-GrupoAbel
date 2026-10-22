@@ -1,0 +1,704 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archimate:model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:archimate="http://www.archimatetool.com/archimate" name="Andina del Sur — arquitectura actual y propuesta" id="id-andina-s10" version="5.0.0">
+  <folder name="strategy" id="folder-strategy" type="strategy"/>
+  <folder name="business" id="folder-business" type="business">
+    <element xsi:type="archimate:BusinessProcess" name="Compras y reposición" id="a-p1">
+      <documentation>Actual. FICHA.md §D y arquitectura-actual.md §3.</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessProcess" name="Compras con aprobación separada" id="t-p1">
+      <documentation>Propuesta. Objetivo TI de FICHA.md §A; OE-02 y OE-05 del plan institucional. Validación de diseño pendiente.</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessProcess" name="Almacenamiento y despacho" id="a-p2">
+      <documentation>Actual. FICHA.md §D y arquitectura-actual.md §3.</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessProcess" name="Almacén integrado y conciliado" id="t-p2">
+      <documentation>Propuesta. Objetivo TI de FICHA.md §A; OE-02 y OE-05 del plan institucional. Validación de diseño pendiente.</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessProcess" name="Venta y distribución en ruta" id="a-p3">
+      <documentation>Actual. FICHA.md §D y arquitectura-actual.md §3.</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessProcess" name="Ventas con precios sincronizados" id="t-p3">
+      <documentation>Propuesta. Objetivo TI de FICHA.md §A; OE-02 y OE-05 del plan institucional. Validación de diseño pendiente.</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessProcess" name="Cobranza y crédito" id="a-p4">
+      <documentation>Actual. FICHA.md §D y arquitectura-actual.md §3.</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessProcess" name="Cobranza con clientes depurados" id="t-p4">
+      <documentation>Propuesta. Objetivo TI de FICHA.md §A; OE-02 y OE-05 del plan institucional. Validación de diseño pendiente.</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessProcess" name="Tesorería y pagos" id="a-p5">
+      <documentation>Actual. FICHA.md §D y arquitectura-actual.md §3.</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessProcess" name="Pagos con aprobación separada" id="t-p5">
+      <documentation>Propuesta. Objetivo TI de FICHA.md §A; OE-02 y OE-05 del plan institucional. Validación de diseño pendiente.</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessProcess" name="Contabilidad y cierre" id="a-p6">
+      <documentation>Actual. FICHA.md §D y arquitectura-actual.md §3.</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessProcess" name="Cierre con conciliación trazable" id="t-p6">
+      <documentation>Propuesta. Objetivo TI de FICHA.md §A; OE-02 y OE-05 del plan institucional. Validación de diseño pendiente.</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessProcess" name="Cambios con control informal" id="a-cambio">
+      <documentation>Actual. mesa-de-servicio-y-sla.md §7: autorización verbal, pruebas variables, sin conteo.</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessProcess" name="Cambios autorizados y probados" id="t-cambio">
+      <documentation>Propuesta P05: evaluación, pruebas, autorización, retorno y registro.</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessProcess" name="Atención TI con registro parcial" id="a-atencion">
+      <documentation>Actual. mesa-de-servicio-y-sla.md §§1–5, sin catálogo aprobado.</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessProcess" name="Atención TI con acuerdos medidos" id="t-atencion">
+      <documentation>Propuesta P06: catálogo, dueños, prioridades y medición.</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessActor" name="Jefe comercial" id="a-actor-comercial">
+      <documentation>Cargo o personal documentado en arquitectura-actual.md §§5–6.</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessActor" name="Jefe de almacén" id="a-actor-almacen">
+      <documentation>Cargo o personal documentado en arquitectura-actual.md §§5–6.</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessActor" name="Vendedores" id="a-actor-vendedores">
+      <documentation>Cargo o personal documentado en arquitectura-actual.md §§5–6.</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessRole" name="Responsable comercial" id="a-rol-comercial">
+      <documentation>Rol analítico inferido del cargo y proceso; confirmar asignación formal.</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessRole" name="Responsable de almacén" id="a-rol-almacen">
+      <documentation>Rol analítico inferido del cargo y proceso; confirmar asignación formal.</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessRole" name="Registro de ventas en ruta" id="a-rol-vendedores">
+      <documentation>Rol analítico inferido del cargo y proceso; confirmar asignación formal.</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessService" name="Atención de cobranza y crédito" id="a-bs-credito">
+      <documentation>Servicio inferido del proceso documentado; no implica SLA aprobado.</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessService" name="Despacho de mercancía" id="a-bs-despacho">
+      <documentation>Servicio inferido del proceso documentado; no implica SLA aprobado.</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessService" name="Venta en ruta" id="a-bs-venta">
+      <documentation>Servicio inferido del proceso documentado; no implica SLA aprobado.</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessObject" name="Cliente" id="a-bo-cliente">
+      <documentation>Objeto de negocio sustentado en las entidades del inventario.</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessObject" name="Producto" id="a-bo-producto">
+      <documentation>Objeto de negocio sustentado en las entidades del inventario.</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessObject" name="Pedido" id="a-bo-pedido">
+      <documentation>Objeto de negocio sustentado en las entidades del inventario.</documentation>
+    </element>
+  </folder>
+  <folder name="application" id="folder-application" type="application">
+    <element xsi:type="archimate:ApplicationComponent" name="ERP comercial" id="a-erp">
+      <documentation>Actual. Compras, ventas, almacén (abandonado), tesorería y contabilidad. Soporte vigente. arquitectura-actual.md §§2–5, salvo fuente indicada.</documentation>
+    </element>
+    <element xsi:type="archimate:ApplicationComponent" name="Fuerza de ventas móvil" id="a-movil">
+      <documentation>Actual. Nube del proveedor, sincronización nocturna. arquitectura-actual.md §§2–5, salvo fuente indicada.</documentation>
+    </element>
+    <element xsi:type="archimate:ApplicationComponent" name="Facturación electrónica OSE" id="a-ose">
+      <documentation>Actual. Integración en línea con ERP. arquitectura-actual.md §§2–5, salvo fuente indicada.</documentation>
+    </element>
+    <element xsi:type="archimate:ApplicationComponent" name="Portal sin soporte" id="a-portal">
+      <documentation>Actual. Hosting compartido; transcripción manual hacia ERP. arquitectura-actual.md §§2–5, salvo fuente indicada.</documentation>
+    </element>
+    <element xsi:type="archimate:ApplicationComponent" name="Hoja de ubicaciones" id="a-ubic">
+      <documentation>Actual. PC del área o carpeta compartida; soporte no vigente. arquitectura-actual.md §§2–5, salvo fuente indicada.</documentation>
+    </element>
+    <element xsi:type="archimate:ApplicationComponent" name="Hoja de conteos" id="a-conteo">
+      <documentation>Actual. PC del área o carpeta compartida; soporte no vigente. arquitectura-actual.md §§2–5, salvo fuente indicada.</documentation>
+    </element>
+    <element xsi:type="archimate:ApplicationComponent" name="Hoja de precios y promociones" id="a-precio">
+      <documentation>Actual. Precios distintos de la app. arquitectura-actual.md §§2–5, salvo fuente indicada.</documentation>
+    </element>
+    <element xsi:type="archimate:ApplicationComponent" name="Libro de cobranza" id="a-cobro">
+      <documentation>Actual. Contiene 8900 clientes frente a 8400 del ERP. arquitectura-actual.md §§2–5, salvo fuente indicada.</documentation>
+    </element>
+    <element xsi:type="archimate:ApplicationComponent" name="Hoja de atenciones TI" id="a-mesa">
+      <documentation>Actual. Registro parcial. Fuente: mesa-de-servicio-y-sla.md §§1–5. arquitectura-actual.md §§2–5, salvo fuente indicada.</documentation>
+    </element>
+    <element xsi:type="archimate:ApplicationComponent" name="ERP con perfiles segregados" id="t-erp">
+      <documentation>Propuesta. Retener producto soportado y reconfigurar permisos; sin autoaprobación. Principios P01–P06 y diagnóstico del caso. No es un sistema existente.</documentation>
+    </element>
+    <element xsi:type="archimate:ApplicationComponent" name="App con sincronización controlada" id="t-movil">
+      <documentation>Propuesta. Definir frescura requerida y validación de precios con negocio y proveedor. Principios P01–P06 y diagnóstico del caso. No es un sistema existente.</documentation>
+    </element>
+    <element xsi:type="archimate:ApplicationComponent" name="OSE conservado" id="t-ose">
+      <documentation>Propuesta. Conservar conexión en línea. Principios P01–P06 y diagnóstico del caso. No es un sistema existente.</documentation>
+    </element>
+    <element xsi:type="archimate:ApplicationComponent" name="Portal mantenido e integrado" id="t-portal">
+      <documentation>Propuesta. Mantenimiento, pruebas e interfaz soportada para pedidos sin redigitación. Principios P01–P06 y diagnóstico del caso. No es un sistema existente.</documentation>
+    </element>
+    <element xsi:type="archimate:ApplicationComponent" name="Módulo de almacén rehabilitado" id="t-almacen">
+      <documentation>Propuesta. Validar ajuste funcional y reimplantar ubicaciones y conteos; retirar libros operativos tras aceptación. Principios P01–P06 y diagnóstico del caso. No es un sistema existente.</documentation>
+    </element>
+    <element xsi:type="archimate:ApplicationComponent" name="Servicios de integración" id="t-integracion">
+      <documentation>Propuesta. Interfaces documentadas con validación, registros de error y reprocesamiento. Principios P01–P06 y diagnóstico del caso. No es un sistema existente.</documentation>
+    </element>
+    <element xsi:type="archimate:ApplicationComponent" name="Registro central de atenciones" id="t-mesa">
+      <documentation>Propuesta. Clasificación, prioridades, responsable, seguimiento y acuerdos medibles. Principios P01–P06 y diagnóstico del caso. No es un sistema existente.</documentation>
+    </element>
+    <element xsi:type="archimate:ApplicationService" name="Registro de compras" id="a-s1">
+      <documentation>Actual: servicio inferido del proceso soportado; no catálogo aprobado.</documentation>
+    </element>
+    <element xsi:type="archimate:ApplicationService" name="Registro de compras" id="t-s1">
+      <documentation>Propuesta: servicio con control y trazabilidad.</documentation>
+    </element>
+    <element xsi:type="archimate:ApplicationService" name="Gestión de ubicaciones y conteos" id="a-s2">
+      <documentation>Actual: servicio inferido del proceso soportado; no catálogo aprobado.</documentation>
+    </element>
+    <element xsi:type="archimate:ApplicationService" name="Gestión de ubicaciones y conteos" id="t-s2">
+      <documentation>Propuesta: servicio con control y trazabilidad.</documentation>
+    </element>
+    <element xsi:type="archimate:ApplicationService" name="Registro de ventas en ruta" id="a-s3">
+      <documentation>Actual: servicio inferido del proceso soportado; no catálogo aprobado.</documentation>
+    </element>
+    <element xsi:type="archimate:ApplicationService" name="Registro de ventas en ruta" id="t-s3">
+      <documentation>Propuesta: servicio con control y trazabilidad.</documentation>
+    </element>
+    <element xsi:type="archimate:ApplicationService" name="Registro de cobranza" id="a-s4">
+      <documentation>Actual: servicio inferido del proceso soportado; no catálogo aprobado.</documentation>
+    </element>
+    <element xsi:type="archimate:ApplicationService" name="Registro de cobranza" id="t-s4">
+      <documentation>Propuesta: servicio con control y trazabilidad.</documentation>
+    </element>
+    <element xsi:type="archimate:ApplicationService" name="Registro de pagos" id="a-s5">
+      <documentation>Actual: servicio inferido del proceso soportado; no catálogo aprobado.</documentation>
+    </element>
+    <element xsi:type="archimate:ApplicationService" name="Registro de pagos" id="t-s5">
+      <documentation>Propuesta: servicio con control y trazabilidad.</documentation>
+    </element>
+    <element xsi:type="archimate:ApplicationService" name="Registro contable" id="a-s6">
+      <documentation>Actual: servicio inferido del proceso soportado; no catálogo aprobado.</documentation>
+    </element>
+    <element xsi:type="archimate:ApplicationService" name="Registro contable" id="t-s6">
+      <documentation>Propuesta: servicio con control y trazabilidad.</documentation>
+    </element>
+    <element xsi:type="archimate:DataObject" name="Cliente: ERP declarado, sin dueño" id="a-d-cliente">
+      <documentation>Actual. arquitectura-actual.md §5. Ver AR02_entidades.csv para conteos y límites.</documentation>
+    </element>
+    <element xsi:type="archimate:DataObject" name="Producto: ERP, jefe comercial" id="a-d-producto">
+      <documentation>Actual. arquitectura-actual.md §5. Ver AR02_entidades.csv para conteos y límites.</documentation>
+    </element>
+    <element xsi:type="archimate:DataObject" name="Stock: libro de hecho, jefe de almacén" id="a-d-stock">
+      <documentation>Actual. arquitectura-actual.md §5. Ver AR02_entidades.csv para conteos y límites.</documentation>
+    </element>
+    <element xsi:type="archimate:DataObject" name="Pedido: ERP, jefe comercial" id="a-d-pedido">
+      <documentation>Actual. arquitectura-actual.md §5. Ver AR02_entidades.csv para conteos y límites.</documentation>
+    </element>
+    <element xsi:type="archimate:DataObject" name="Cliente: ERP, dueño propuesto Jefe comercial" id="t-d-cliente">
+      <documentation>Propuesta de fuente y gobierno. Designaciones y metas requieren aprobación; no se presentan como actuales.</documentation>
+    </element>
+    <element xsi:type="archimate:DataObject" name="Producto: ERP, jefe comercial" id="t-d-producto">
+      <documentation>Propuesta de fuente y gobierno. Designaciones y metas requieren aprobación; no se presentan como actuales.</documentation>
+    </element>
+    <element xsi:type="archimate:DataObject" name="Stock: módulo ERP conciliado, jefe de almacén" id="t-d-stock">
+      <documentation>Propuesta de fuente y gobierno. Designaciones y metas requieren aprobación; no se presentan como actuales.</documentation>
+    </element>
+    <element xsi:type="archimate:DataObject" name="Pedido: ERP, sin redigitación" id="t-d-pedido">
+      <documentation>Propuesta de fuente y gobierno. Designaciones y metas requieren aprobación; no se presentan como actuales.</documentation>
+    </element>
+  </folder>
+  <folder name="technology" id="folder-technology" type="technology">
+    <element xsi:type="archimate:Node" name="Servidor propio ERP en Tacna" id="a-servidor">
+      <documentation>Actual. arquitectura-actual.md §6 y FICHA.md §F.</documentation>
+    </element>
+    <element xsi:type="archimate:Node" name="Nube del proveedor móvil" id="a-nube">
+      <documentation>Actual. arquitectura-actual.md §6 y FICHA.md §F.</documentation>
+    </element>
+    <element xsi:type="archimate:Node" name="Hosting compartido del portal" id="a-hosting">
+      <documentation>Actual. arquitectura-actual.md §6 y FICHA.md §F.</documentation>
+    </element>
+    <element xsi:type="archimate:Node" name="Disco local de respaldo" id="a-disco">
+      <documentation>Actual. arquitectura-actual.md §6 y FICHA.md §F.</documentation>
+    </element>
+    <element xsi:type="archimate:Device" name="70 estaciones de trabajo" id="a-pc">
+      <documentation>Actual. arquitectura-actual.md §6.</documentation>
+    </element>
+    <element xsi:type="archimate:Device" name="24 móviles de vendedores" id="a-moviles">
+      <documentation>Actual. arquitectura-actual.md §6.</documentation>
+    </element>
+    <element xsi:type="archimate:CommunicationNetwork" name="Red plana con Wi-Fi de invitados" id="a-lan">
+      <documentation>Actual. arquitectura-actual.md §6; no se infiere segmentación efectiva de invitados.</documentation>
+    </element>
+    <element xsi:type="archimate:CommunicationNetwork" name="Enlace a Ilo sin respaldo" id="a-ilo">
+      <documentation>Actual. arquitectura-actual.md §6; no se infiere segmentación efectiva de invitados.</documentation>
+    </element>
+    <element xsi:type="archimate:Node" name="Servidor ERP mantenido" id="t-servidor">
+      <documentation>Propuesta basada en continuidad y mantenimiento; dimensionamiento y proveedor pendientes.</documentation>
+    </element>
+    <element xsi:type="archimate:Node" name="Nube del proveedor móvil" id="t-nube">
+      <documentation>Propuesta basada en continuidad y mantenimiento; dimensionamiento y proveedor pendientes.</documentation>
+    </element>
+    <element xsi:type="archimate:Node" name="Alojamiento del portal con mantenimiento" id="t-hosting">
+      <documentation>Propuesta basada en continuidad y mantenimiento; dimensionamiento y proveedor pendientes.</documentation>
+    </element>
+    <element xsi:type="archimate:Node" name="Copias separadas y recuperación probada" id="t-backup">
+      <documentation>Propuesta basada en continuidad y mantenimiento; dimensionamiento y proveedor pendientes.</documentation>
+    </element>
+    <element xsi:type="archimate:CommunicationNetwork" name="Red segmentada e invitados aislados" id="t-lan">
+      <documentation>Propuesta. Validar factibilidad y pruebas antes de aceptar.</documentation>
+    </element>
+    <element xsi:type="archimate:CommunicationNetwork" name="Enlace a Ilo con contingencia probada" id="t-ilo">
+      <documentation>Propuesta. Validar factibilidad y pruebas antes de aceptar.</documentation>
+    </element>
+  </folder>
+  <folder name="motivation" id="folder-motivation" type="motivation"/>
+  <folder name="implementation_migration" id="folder-implementation_migration" type="implementation_migration"/>
+  <folder name="other" id="folder-other" type="other"/>
+  <folder name="relations" id="folder-relations" type="relations">
+    <element xsi:type="archimate:ServingRelationship" id="rel-1" source="a-s1" target="a-p1"/>
+    <element xsi:type="archimate:RealizationRelationship" id="rel-2" source="a-erp" target="a-s1"/>
+    <element xsi:type="archimate:ServingRelationship" id="rel-3" source="t-s1" target="t-p1"/>
+    <element xsi:type="archimate:RealizationRelationship" id="rel-4" source="t-erp" target="t-s1"/>
+    <element xsi:type="archimate:ServingRelationship" id="rel-5" source="a-s2" target="a-p2"/>
+    <element xsi:type="archimate:RealizationRelationship" id="rel-6" source="a-ubic" target="a-s2"/>
+    <element xsi:type="archimate:ServingRelationship" id="rel-7" source="t-s2" target="t-p2"/>
+    <element xsi:type="archimate:RealizationRelationship" id="rel-8" source="t-almacen" target="t-s2"/>
+    <element xsi:type="archimate:ServingRelationship" id="rel-9" source="a-s3" target="a-p3"/>
+    <element xsi:type="archimate:RealizationRelationship" id="rel-10" source="a-movil" target="a-s3"/>
+    <element xsi:type="archimate:ServingRelationship" id="rel-11" source="t-s3" target="t-p3"/>
+    <element xsi:type="archimate:RealizationRelationship" id="rel-12" source="t-movil" target="t-s3"/>
+    <element xsi:type="archimate:ServingRelationship" id="rel-13" source="a-s4" target="a-p4"/>
+    <element xsi:type="archimate:RealizationRelationship" id="rel-14" source="a-erp" target="a-s4"/>
+    <element xsi:type="archimate:ServingRelationship" id="rel-15" source="t-s4" target="t-p4"/>
+    <element xsi:type="archimate:RealizationRelationship" id="rel-16" source="t-erp" target="t-s4"/>
+    <element xsi:type="archimate:ServingRelationship" id="rel-17" source="a-s5" target="a-p5"/>
+    <element xsi:type="archimate:RealizationRelationship" id="rel-18" source="a-erp" target="a-s5"/>
+    <element xsi:type="archimate:ServingRelationship" id="rel-19" source="t-s5" target="t-p5"/>
+    <element xsi:type="archimate:RealizationRelationship" id="rel-20" source="t-erp" target="t-s5"/>
+    <element xsi:type="archimate:ServingRelationship" id="rel-21" source="a-s6" target="a-p6"/>
+    <element xsi:type="archimate:RealizationRelationship" id="rel-22" source="a-erp" target="a-s6"/>
+    <element xsi:type="archimate:ServingRelationship" id="rel-23" source="t-s6" target="t-p6"/>
+    <element xsi:type="archimate:RealizationRelationship" id="rel-24" source="t-erp" target="t-s6"/>
+    <element xsi:type="archimate:RealizationRelationship" id="rel-25" source="a-conteo" target="a-s2"/>
+    <element xsi:type="archimate:RealizationRelationship" id="rel-26" source="a-cobro" target="a-s4"/>
+    <element xsi:type="archimate:FlowRelationship" name="Sincronización nocturna" id="rel-27" source="a-erp" target="a-movil"/>
+    <element xsi:type="archimate:FlowRelationship" name="En línea con OSE" id="rel-28" source="a-erp" target="a-ose"/>
+    <element xsi:type="archimate:FlowRelationship" name="Catálogo" id="rel-29" source="t-integracion" target="t-portal"/>
+    <element xsi:type="archimate:FlowRelationship" name="Precios" id="rel-30" source="t-integracion" target="t-movil"/>
+    <element xsi:type="archimate:FlowRelationship" name="Stock" id="rel-31" source="t-integracion" target="t-almacen"/>
+    <element xsi:type="archimate:FlowRelationship" name="En línea con OSE" id="rel-32" source="t-erp" target="t-ose"/>
+    <element xsi:type="archimate:FlowRelationship" name="Datos maestros" id="rel-33" source="t-erp" target="t-integracion"/>
+    <element xsi:type="archimate:FlowRelationship" name="Pedidos recibidos" id="rel-34" source="t-portal" target="t-integracion"/>
+    <element xsi:type="archimate:FlowRelationship" name="Pedidos validados" id="rel-35" source="t-integracion" target="t-erp"/>
+    <element xsi:type="archimate:AccessRelationship" id="rel-36" source="a-erp" target="a-d-cliente"/>
+    <element xsi:type="archimate:AccessRelationship" id="rel-37" source="a-erp" target="a-d-producto"/>
+    <element xsi:type="archimate:AccessRelationship" id="rel-38" source="a-erp" target="a-d-stock"/>
+    <element xsi:type="archimate:AccessRelationship" id="rel-39" source="a-erp" target="a-d-pedido"/>
+    <element xsi:type="archimate:AccessRelationship" id="rel-40" source="t-erp" target="t-d-cliente"/>
+    <element xsi:type="archimate:AccessRelationship" id="rel-41" source="t-erp" target="t-d-producto"/>
+    <element xsi:type="archimate:AccessRelationship" id="rel-42" source="t-erp" target="t-d-stock"/>
+    <element xsi:type="archimate:AccessRelationship" id="rel-43" source="t-erp" target="t-d-pedido"/>
+    <element xsi:type="archimate:AssociationRelationship" name="Alojamiento documentado" id="rel-44" source="a-servidor" target="a-erp"/>
+    <element xsi:type="archimate:AssociationRelationship" name="Alojamiento documentado" id="rel-45" source="a-nube" target="a-movil"/>
+    <element xsi:type="archimate:AssociationRelationship" name="Alojamiento documentado" id="rel-46" source="a-hosting" target="a-portal"/>
+    <element xsi:type="archimate:AssociationRelationship" name="Alojamiento propuesto" id="rel-47" source="t-servidor" target="t-erp"/>
+    <element xsi:type="archimate:AssociationRelationship" name="Alojamiento propuesto" id="rel-48" source="t-nube" target="t-movil"/>
+    <element xsi:type="archimate:AssociationRelationship" name="Alojamiento propuesto" id="rel-49" source="t-hosting" target="t-portal"/>
+    <element xsi:type="archimate:AssociationRelationship" id="rel-50" source="a-mesa" target="a-atencion"/>
+    <element xsi:type="archimate:AssociationRelationship" id="rel-51" source="t-mesa" target="t-atencion"/>
+    <element xsi:type="archimate:AssignmentRelationship" id="rel-52" source="a-actor-comercial" target="a-rol-comercial"/>
+    <element xsi:type="archimate:AssignmentRelationship" id="rel-53" source="a-actor-almacen" target="a-rol-almacen"/>
+    <element xsi:type="archimate:AssignmentRelationship" id="rel-54" source="a-actor-vendedores" target="a-rol-vendedores"/>
+    <element xsi:type="archimate:AssignmentRelationship" id="rel-55" source="a-rol-comercial" target="a-p4"/>
+    <element xsi:type="archimate:AssignmentRelationship" id="rel-56" source="a-rol-almacen" target="a-p2"/>
+    <element xsi:type="archimate:AssignmentRelationship" id="rel-57" source="a-rol-vendedores" target="a-p3"/>
+    <element xsi:type="archimate:RealizationRelationship" id="rel-58" source="a-p4" target="a-bs-credito"/>
+    <element xsi:type="archimate:RealizationRelationship" id="rel-59" source="a-p2" target="a-bs-despacho"/>
+    <element xsi:type="archimate:RealizationRelationship" id="rel-60" source="a-p3" target="a-bs-venta"/>
+  </folder>
+  <folder name="diagrams" id="folder-diagrams" type="diagrams">
+    <element xsi:type="archimate:ArchimateDiagramModel" name="01 Actual proceso aplicacion" id="v01">
+      <child xsi:type="archimate:DiagramObject" id="v01-a-p1-0-0" targetConnections="v01-c0-1" archimateElement="a-p1">
+        <bounds x="30" y="30" width="220" height="80"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v01-a-p2-0-1" targetConnections="v01-c1-1" archimateElement="a-p2">
+        <bounds x="275" y="30" width="220" height="80"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v01-a-p3-0-2" targetConnections="v01-c2-1" archimateElement="a-p3">
+        <bounds x="520" y="30" width="220" height="80"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v01-a-p4-0-3" targetConnections="v01-c3-1" archimateElement="a-p4">
+        <bounds x="765" y="30" width="220" height="80"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v01-a-p5-0-4" targetConnections="v01-c4-1" archimateElement="a-p5">
+        <bounds x="1010" y="30" width="220" height="80"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v01-a-p6-0-5" targetConnections="v01-c5-1" archimateElement="a-p6">
+        <bounds x="1255" y="30" width="220" height="80"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v01-a-s1-1-0" targetConnections="v01-c0-2" archimateElement="a-s1">
+        <bounds x="30" y="185" width="220" height="80"/>
+        <sourceConnection xsi:type="archimate:Connection" id="v01-c0-1" source="v01-a-s1-1-0" target="v01-a-p1-0-0" archimateRelationship="rel-1"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v01-a-s2-1-1" targetConnections="v01-c1-2" archimateElement="a-s2">
+        <bounds x="275" y="185" width="220" height="80"/>
+        <sourceConnection xsi:type="archimate:Connection" id="v01-c1-1" source="v01-a-s2-1-1" target="v01-a-p2-0-1" archimateRelationship="rel-5"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v01-a-s3-1-2" targetConnections="v01-c2-2" archimateElement="a-s3">
+        <bounds x="520" y="185" width="220" height="80"/>
+        <sourceConnection xsi:type="archimate:Connection" id="v01-c2-1" source="v01-a-s3-1-2" target="v01-a-p3-0-2" archimateRelationship="rel-9"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v01-a-s4-1-3" targetConnections="v01-c3-2" archimateElement="a-s4">
+        <bounds x="765" y="185" width="220" height="80"/>
+        <sourceConnection xsi:type="archimate:Connection" id="v01-c3-1" source="v01-a-s4-1-3" target="v01-a-p4-0-3" archimateRelationship="rel-13"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v01-a-s5-1-4" targetConnections="v01-c4-2" archimateElement="a-s5">
+        <bounds x="1010" y="185" width="220" height="80"/>
+        <sourceConnection xsi:type="archimate:Connection" id="v01-c4-1" source="v01-a-s5-1-4" target="v01-a-p5-0-4" archimateRelationship="rel-17"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v01-a-s6-1-5" targetConnections="v01-c5-2" archimateElement="a-s6">
+        <bounds x="1255" y="185" width="220" height="80"/>
+        <sourceConnection xsi:type="archimate:Connection" id="v01-c5-1" source="v01-a-s6-1-5" target="v01-a-p6-0-5" archimateRelationship="rel-21"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v01-a-erp-2-0" archimateElement="a-erp">
+        <bounds x="30" y="340" width="220" height="80"/>
+        <sourceConnection xsi:type="archimate:Connection" id="v01-c0-2" source="v01-a-erp-2-0" target="v01-a-s1-1-0" archimateRelationship="rel-2"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v01-a-ubic-2-1" archimateElement="a-ubic">
+        <bounds x="275" y="340" width="220" height="80"/>
+        <sourceConnection xsi:type="archimate:Connection" id="v01-c1-2" source="v01-a-ubic-2-1" target="v01-a-s2-1-1" archimateRelationship="rel-6"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v01-a-movil-2-2" archimateElement="a-movil">
+        <bounds x="520" y="340" width="220" height="80"/>
+        <sourceConnection xsi:type="archimate:Connection" id="v01-c2-2" source="v01-a-movil-2-2" target="v01-a-s3-1-2" archimateRelationship="rel-10"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v01-a-cobro-2-3" archimateElement="a-cobro">
+        <bounds x="765" y="340" width="220" height="80"/>
+        <sourceConnection xsi:type="archimate:Connection" id="v01-c3-2" source="v01-a-cobro-2-3" target="v01-a-s4-1-3" archimateRelationship="rel-26"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v01-a-erp-2-4" archimateElement="a-erp">
+        <bounds x="1010" y="340" width="220" height="80"/>
+        <sourceConnection xsi:type="archimate:Connection" id="v01-c4-2" source="v01-a-erp-2-4" target="v01-a-s5-1-4" archimateRelationship="rel-18"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v01-a-erp-2-5" archimateElement="a-erp">
+        <bounds x="1255" y="340" width="220" height="80"/>
+        <sourceConnection xsi:type="archimate:Connection" id="v01-c5-2" source="v01-a-erp-2-5" target="v01-a-s6-1-5" archimateRelationship="rel-22"/>
+      </child>
+      <documentation>Actual. ERP repetido visualmente corresponde al mismo elemento. Servicios inferidos; hojas complementarias en vista 02. Evaluación en B_levantamiento_actual.md.</documentation>
+    </element>
+    <element xsi:type="archimate:ArchimateDiagramModel" name="02 Actual aplicaciones y datos" id="v02">
+      <child xsi:type="archimate:DiagramObject" id="v02-a-erp-0-0" archimateElement="a-erp">
+        <bounds x="30" y="30" width="220" height="80"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v02-a-movil-0-1" archimateElement="a-movil">
+        <bounds x="275" y="30" width="220" height="80"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v02-a-ose-0-2" archimateElement="a-ose">
+        <bounds x="520" y="30" width="220" height="80"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v02-a-portal-0-3" archimateElement="a-portal">
+        <bounds x="765" y="30" width="220" height="80"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v02-a-ubic-1-0" archimateElement="a-ubic">
+        <bounds x="30" y="185" width="220" height="80"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v02-a-conteo-1-1" archimateElement="a-conteo">
+        <bounds x="275" y="185" width="220" height="80"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v02-a-precio-1-2" archimateElement="a-precio">
+        <bounds x="520" y="185" width="220" height="80"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v02-a-cobro-1-3" archimateElement="a-cobro">
+        <bounds x="765" y="185" width="220" height="80"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v02-a-d-cliente-2-0" archimateElement="a-d-cliente">
+        <bounds x="30" y="340" width="220" height="80"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v02-a-d-producto-2-1" archimateElement="a-d-producto">
+        <bounds x="275" y="340" width="220" height="80"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v02-a-d-stock-2-2" archimateElement="a-d-stock">
+        <bounds x="520" y="340" width="220" height="80"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v02-a-d-pedido-2-3" archimateElement="a-d-pedido">
+        <bounds x="765" y="340" width="220" height="80"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v02-a-mesa-3-0" archimateElement="a-mesa">
+        <bounds x="30" y="495" width="220" height="80"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v02-a-atencion-3-1" archimateElement="a-atencion">
+        <bounds x="275" y="495" width="220" height="80"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v02-a-cambio-3-2" archimateElement="a-cambio">
+        <bounds x="520" y="495" width="220" height="80"/>
+      </child>
+      <documentation>Portal a ERP es transcripción manual; no se dibuja como flujo automático. Libros de almacén sin integración.</documentation>
+    </element>
+    <element xsi:type="archimate:ArchimateDiagramModel" name="03 Actual tecnologia" id="v03">
+      <child xsi:type="archimate:DiagramObject" id="v03-a-erp-0-0" targetConnections="v03-rel-44" archimateElement="a-erp">
+        <bounds x="30" y="30" width="220" height="80"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v03-a-movil-0-1" targetConnections="v03-rel-45" archimateElement="a-movil">
+        <bounds x="275" y="30" width="220" height="80"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v03-a-portal-0-2" targetConnections="v03-rel-46" archimateElement="a-portal">
+        <bounds x="520" y="30" width="220" height="80"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v03-a-servidor-1-0" archimateElement="a-servidor">
+        <bounds x="30" y="185" width="220" height="80"/>
+        <sourceConnection xsi:type="archimate:Connection" id="v03-rel-44" source="v03-a-servidor-1-0" target="v03-a-erp-0-0" archimateRelationship="rel-44"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v03-a-nube-1-1" archimateElement="a-nube">
+        <bounds x="275" y="185" width="220" height="80"/>
+        <sourceConnection xsi:type="archimate:Connection" id="v03-rel-45" source="v03-a-nube-1-1" target="v03-a-movil-0-1" archimateRelationship="rel-45"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v03-a-hosting-1-2" archimateElement="a-hosting">
+        <bounds x="520" y="185" width="220" height="80"/>
+        <sourceConnection xsi:type="archimate:Connection" id="v03-rel-46" source="v03-a-hosting-1-2" target="v03-a-portal-0-2" archimateRelationship="rel-46"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v03-a-pc-2-0" archimateElement="a-pc">
+        <bounds x="30" y="340" width="220" height="80"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v03-a-moviles-2-1" archimateElement="a-moviles">
+        <bounds x="275" y="340" width="220" height="80"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v03-a-disco-2-2" archimateElement="a-disco">
+        <bounds x="520" y="340" width="220" height="80"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v03-a-lan-3-0" archimateElement="a-lan">
+        <bounds x="30" y="495" width="220" height="80"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v03-a-ilo-3-1" archimateElement="a-ilo">
+        <bounds x="275" y="495" width="220" height="80"/>
+      </child>
+      <documentation>Inventario del caso. No representa conexiones físicas no documentadas; asociaciones indican alojamiento.</documentation>
+    </element>
+    <element xsi:type="archimate:ArchimateDiagramModel" name="04 Objetivo proceso aplicacion" id="v04">
+      <child xsi:type="archimate:DiagramObject" id="v04-t-p1-0-0" targetConnections="v04-c0-1" archimateElement="t-p1">
+        <bounds x="30" y="30" width="220" height="80"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v04-t-p2-0-1" targetConnections="v04-c1-1" archimateElement="t-p2">
+        <bounds x="275" y="30" width="220" height="80"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v04-t-p3-0-2" targetConnections="v04-c2-1" archimateElement="t-p3">
+        <bounds x="520" y="30" width="220" height="80"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v04-t-p4-0-3" targetConnections="v04-c3-1" archimateElement="t-p4">
+        <bounds x="765" y="30" width="220" height="80"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v04-t-p5-0-4" targetConnections="v04-c4-1" archimateElement="t-p5">
+        <bounds x="1010" y="30" width="220" height="80"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v04-t-p6-0-5" targetConnections="v04-c5-1" archimateElement="t-p6">
+        <bounds x="1255" y="30" width="220" height="80"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v04-t-s1-1-0" targetConnections="v04-c0-2" archimateElement="t-s1">
+        <bounds x="30" y="185" width="220" height="80"/>
+        <sourceConnection xsi:type="archimate:Connection" id="v04-c0-1" source="v04-t-s1-1-0" target="v04-t-p1-0-0" archimateRelationship="rel-3"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v04-t-s2-1-1" targetConnections="v04-c1-2" archimateElement="t-s2">
+        <bounds x="275" y="185" width="220" height="80"/>
+        <sourceConnection xsi:type="archimate:Connection" id="v04-c1-1" source="v04-t-s2-1-1" target="v04-t-p2-0-1" archimateRelationship="rel-7"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v04-t-s3-1-2" targetConnections="v04-c2-2" archimateElement="t-s3">
+        <bounds x="520" y="185" width="220" height="80"/>
+        <sourceConnection xsi:type="archimate:Connection" id="v04-c2-1" source="v04-t-s3-1-2" target="v04-t-p3-0-2" archimateRelationship="rel-11"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v04-t-s4-1-3" targetConnections="v04-c3-2" archimateElement="t-s4">
+        <bounds x="765" y="185" width="220" height="80"/>
+        <sourceConnection xsi:type="archimate:Connection" id="v04-c3-1" source="v04-t-s4-1-3" target="v04-t-p4-0-3" archimateRelationship="rel-15"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v04-t-s5-1-4" targetConnections="v04-c4-2" archimateElement="t-s5">
+        <bounds x="1010" y="185" width="220" height="80"/>
+        <sourceConnection xsi:type="archimate:Connection" id="v04-c4-1" source="v04-t-s5-1-4" target="v04-t-p5-0-4" archimateRelationship="rel-19"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v04-t-s6-1-5" targetConnections="v04-c5-2" archimateElement="t-s6">
+        <bounds x="1255" y="185" width="220" height="80"/>
+        <sourceConnection xsi:type="archimate:Connection" id="v04-c5-1" source="v04-t-s6-1-5" target="v04-t-p6-0-5" archimateRelationship="rel-23"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v04-t-erp-2-0" archimateElement="t-erp">
+        <bounds x="30" y="340" width="220" height="80"/>
+        <sourceConnection xsi:type="archimate:Connection" id="v04-c0-2" source="v04-t-erp-2-0" target="v04-t-s1-1-0" archimateRelationship="rel-4"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v04-t-almacen-2-1" archimateElement="t-almacen">
+        <bounds x="275" y="340" width="220" height="80"/>
+        <sourceConnection xsi:type="archimate:Connection" id="v04-c1-2" source="v04-t-almacen-2-1" target="v04-t-s2-1-1" archimateRelationship="rel-8"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v04-t-movil-2-2" archimateElement="t-movil">
+        <bounds x="520" y="340" width="220" height="80"/>
+        <sourceConnection xsi:type="archimate:Connection" id="v04-c2-2" source="v04-t-movil-2-2" target="v04-t-s3-1-2" archimateRelationship="rel-12"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v04-t-erp-2-3" archimateElement="t-erp">
+        <bounds x="765" y="340" width="220" height="80"/>
+        <sourceConnection xsi:type="archimate:Connection" id="v04-c3-2" source="v04-t-erp-2-3" target="v04-t-s4-1-3" archimateRelationship="rel-16"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v04-t-erp-2-4" archimateElement="t-erp">
+        <bounds x="1010" y="340" width="220" height="80"/>
+        <sourceConnection xsi:type="archimate:Connection" id="v04-c4-2" source="v04-t-erp-2-4" target="v04-t-s5-1-4" archimateRelationship="rel-20"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v04-t-erp-2-5" archimateElement="t-erp">
+        <bounds x="1255" y="340" width="220" height="80"/>
+        <sourceConnection xsi:type="archimate:Connection" id="v04-c5-2" source="v04-t-erp-2-5" target="v04-t-s6-1-5" archimateRelationship="rel-24"/>
+      </child>
+      <documentation>Propuesta. ERP repetido visualmente es un único elemento. Pendiente de validación de visión y capacidades del PETI.</documentation>
+    </element>
+    <element xsi:type="archimate:ArchimateDiagramModel" name="05 Objetivo aplicaciones y datos" id="v05">
+      <child xsi:type="archimate:DiagramObject" id="v05-t-erp-0-0" archimateElement="t-erp">
+        <bounds x="30" y="30" width="220" height="80"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v05-t-movil-0-1" archimateElement="t-movil">
+        <bounds x="275" y="30" width="220" height="80"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v05-t-ose-0-2" archimateElement="t-ose">
+        <bounds x="520" y="30" width="220" height="80"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v05-t-portal-0-3" archimateElement="t-portal">
+        <bounds x="765" y="30" width="220" height="80"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v05-t-almacen-1-0" archimateElement="t-almacen">
+        <bounds x="30" y="185" width="220" height="80"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v05-t-integracion-1-1" archimateElement="t-integracion">
+        <bounds x="275" y="185" width="220" height="80"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v05-t-mesa-1-2" archimateElement="t-mesa">
+        <bounds x="520" y="185" width="220" height="80"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v05-t-d-cliente-2-0" archimateElement="t-d-cliente">
+        <bounds x="30" y="340" width="220" height="80"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v05-t-d-producto-2-1" archimateElement="t-d-producto">
+        <bounds x="275" y="340" width="220" height="80"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v05-t-d-stock-2-2" archimateElement="t-d-stock">
+        <bounds x="520" y="340" width="220" height="80"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v05-t-d-pedido-2-3" archimateElement="t-d-pedido">
+        <bounds x="765" y="340" width="220" height="80"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v05-t-atencion-3-0" archimateElement="t-atencion">
+        <bounds x="30" y="495" width="220" height="80"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v05-t-cambio-3-1" archimateElement="t-cambio">
+        <bounds x="275" y="495" width="220" height="80"/>
+      </child>
+      <documentation>Propuesta. Retiro de libros operativos solo después de migración, conciliación y aceptación; preservar histórico.</documentation>
+    </element>
+    <element xsi:type="archimate:ArchimateDiagramModel" name="06 Objetivo tecnologia" id="v06">
+      <child xsi:type="archimate:DiagramObject" id="v06-t-erp-0-0" targetConnections="v06-rel-47" archimateElement="t-erp">
+        <bounds x="30" y="30" width="220" height="80"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v06-t-movil-0-1" targetConnections="v06-rel-48" archimateElement="t-movil">
+        <bounds x="275" y="30" width="220" height="80"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v06-t-portal-0-2" targetConnections="v06-rel-49" archimateElement="t-portal">
+        <bounds x="520" y="30" width="220" height="80"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v06-t-servidor-1-0" archimateElement="t-servidor">
+        <bounds x="30" y="185" width="220" height="80"/>
+        <sourceConnection xsi:type="archimate:Connection" id="v06-rel-47" source="v06-t-servidor-1-0" target="v06-t-erp-0-0" archimateRelationship="rel-47"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v06-t-nube-1-1" archimateElement="t-nube">
+        <bounds x="275" y="185" width="220" height="80"/>
+        <sourceConnection xsi:type="archimate:Connection" id="v06-rel-48" source="v06-t-nube-1-1" target="v06-t-movil-0-1" archimateRelationship="rel-48"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v06-t-hosting-1-2" archimateElement="t-hosting">
+        <bounds x="520" y="185" width="220" height="80"/>
+        <sourceConnection xsi:type="archimate:Connection" id="v06-rel-49" source="v06-t-hosting-1-2" target="v06-t-portal-0-2" archimateRelationship="rel-49"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v06-t-backup-2-0" archimateElement="t-backup">
+        <bounds x="30" y="340" width="220" height="80"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v06-t-lan-2-1" archimateElement="t-lan">
+        <bounds x="275" y="340" width="220" height="80"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v06-t-ilo-2-2" archimateElement="t-ilo">
+        <bounds x="520" y="340" width="220" height="80"/>
+      </child>
+      <documentation>Propuesta. No se garantiza redundancia del servidor: se propone recuperación verificada y contingencia de enlace.</documentation>
+    </element>
+    <element xsi:type="archimate:ArchimateDiagramModel" name="07 Integraciones actuales" id="v07">
+      <child xsi:type="archimate:DiagramObject" id="v07-a-erp-0-0" archimateElement="a-erp">
+        <bounds x="30" y="30" width="220" height="80"/>
+        <sourceConnection xsi:type="archimate:Connection" id="v07-rel-27" source="v07-a-erp-0-0" target="v07-a-movil-1-0" archimateRelationship="rel-27"/>
+        <sourceConnection xsi:type="archimate:Connection" id="v07-rel-28" source="v07-a-erp-0-0" target="v07-a-ose-1-1" archimateRelationship="rel-28"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v07-a-movil-1-0" targetConnections="v07-rel-27" archimateElement="a-movil">
+        <bounds x="30" y="185" width="220" height="80"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v07-a-ose-1-1" targetConnections="v07-rel-28" archimateElement="a-ose">
+        <bounds x="275" y="185" width="220" height="80"/>
+      </child>
+      <documentation>Solo flujos automáticos acreditados. Portal: transcripción manual; almacén: sin integración. Ver tabla del inventario.</documentation>
+    </element>
+    <element xsi:type="archimate:ArchimateDiagramModel" name="08 Integraciones propuestas" id="v08">
+      <child xsi:type="archimate:DiagramObject" id="v08-t-erp-0-0" archimateElement="t-erp">
+        <bounds x="30" y="30" width="220" height="80"/>
+        <sourceConnection xsi:type="archimate:Connection" id="v08-rel-33" source="v08-t-erp-0-0" target="v08-t-integracion-1-0" archimateRelationship="rel-33"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v08-t-integracion-1-0" targetConnections="v08-rel-33" archimateElement="t-integracion">
+        <bounds x="30" y="185" width="220" height="80"/>
+        <sourceConnection xsi:type="archimate:Connection" id="v08-rel-29" source="v08-t-integracion-1-0" target="v08-t-portal-2-2" archimateRelationship="rel-29"/>
+        <sourceConnection xsi:type="archimate:Connection" id="v08-rel-30" source="v08-t-integracion-1-0" target="v08-t-movil-2-1" archimateRelationship="rel-30"/>
+        <sourceConnection xsi:type="archimate:Connection" id="v08-rel-31" source="v08-t-integracion-1-0" target="v08-t-almacen-2-0" archimateRelationship="rel-31"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v08-t-almacen-2-0" targetConnections="v08-rel-31" archimateElement="t-almacen">
+        <bounds x="30" y="340" width="220" height="80"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v08-t-movil-2-1" targetConnections="v08-rel-30" archimateElement="t-movil">
+        <bounds x="275" y="340" width="220" height="80"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v08-t-portal-2-2" targetConnections="v08-rel-29" archimateElement="t-portal">
+        <bounds x="520" y="340" width="220" height="80"/>
+      </child>
+      <documentation>Propuesta de intercambio controlado. La dirección de flechas muestra distribución de datos maestros; los pedidos recibidos y otros flujos de retorno requieren contrato de interfaz, no se pretende representar aquí el protocolo completo.</documentation>
+    </element>
+    <element xsi:type="archimate:ArchimateDiagramModel" name="09 Negocio actual roles y servicios" id="v09">
+      <child xsi:type="archimate:DiagramObject" id="v09-a-actor-comercial-0-0" archimateElement="a-actor-comercial">
+        <bounds x="30" y="30" width="220" height="80"/>
+        <sourceConnection xsi:type="archimate:Connection" id="v09-rel-52" source="v09-a-actor-comercial-0-0" target="v09-a-rol-comercial-1-0" archimateRelationship="rel-52"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v09-a-actor-almacen-0-1" archimateElement="a-actor-almacen">
+        <bounds x="275" y="30" width="220" height="80"/>
+        <sourceConnection xsi:type="archimate:Connection" id="v09-rel-53" source="v09-a-actor-almacen-0-1" target="v09-a-rol-almacen-1-1" archimateRelationship="rel-53"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v09-a-actor-vendedores-0-2" archimateElement="a-actor-vendedores">
+        <bounds x="520" y="30" width="220" height="80"/>
+        <sourceConnection xsi:type="archimate:Connection" id="v09-rel-54" source="v09-a-actor-vendedores-0-2" target="v09-a-rol-vendedores-1-2" archimateRelationship="rel-54"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v09-a-rol-comercial-1-0" targetConnections="v09-rel-52" archimateElement="a-rol-comercial">
+        <bounds x="30" y="185" width="220" height="80"/>
+        <sourceConnection xsi:type="archimate:Connection" id="v09-rel-55" source="v09-a-rol-comercial-1-0" target="v09-a-p4-2-0" archimateRelationship="rel-55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v09-a-rol-almacen-1-1" targetConnections="v09-rel-53" archimateElement="a-rol-almacen">
+        <bounds x="275" y="185" width="220" height="80"/>
+        <sourceConnection xsi:type="archimate:Connection" id="v09-rel-56" source="v09-a-rol-almacen-1-1" target="v09-a-p2-2-1" archimateRelationship="rel-56"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v09-a-rol-vendedores-1-2" targetConnections="v09-rel-54" archimateElement="a-rol-vendedores">
+        <bounds x="520" y="185" width="220" height="80"/>
+        <sourceConnection xsi:type="archimate:Connection" id="v09-rel-57" source="v09-a-rol-vendedores-1-2" target="v09-a-p3-2-2" archimateRelationship="rel-57"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v09-a-p4-2-0" targetConnections="v09-rel-55" archimateElement="a-p4">
+        <bounds x="30" y="340" width="220" height="80"/>
+        <sourceConnection xsi:type="archimate:Connection" id="v09-rel-58" source="v09-a-p4-2-0" target="v09-a-bs-credito-3-0" archimateRelationship="rel-58"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v09-a-p2-2-1" targetConnections="v09-rel-56" archimateElement="a-p2">
+        <bounds x="275" y="340" width="220" height="80"/>
+        <sourceConnection xsi:type="archimate:Connection" id="v09-rel-59" source="v09-a-p2-2-1" target="v09-a-bs-despacho-3-1" archimateRelationship="rel-59"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v09-a-p3-2-2" targetConnections="v09-rel-57" archimateElement="a-p3">
+        <bounds x="520" y="340" width="220" height="80"/>
+        <sourceConnection xsi:type="archimate:Connection" id="v09-rel-60" source="v09-a-p3-2-2" target="v09-a-bs-venta-3-2" archimateRelationship="rel-60"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v09-a-bs-credito-3-0" targetConnections="v09-rel-58" archimateElement="a-bs-credito">
+        <bounds x="30" y="495" width="220" height="80"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v09-a-bs-despacho-3-1" targetConnections="v09-rel-59" archimateElement="a-bs-despacho">
+        <bounds x="275" y="495" width="220" height="80"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v09-a-bs-venta-3-2" targetConnections="v09-rel-60" archimateElement="a-bs-venta">
+        <bounds x="520" y="495" width="220" height="80"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v09-a-bo-cliente-4-0" archimateElement="a-bo-cliente">
+        <bounds x="30" y="650" width="220" height="80"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v09-a-bo-producto-4-1" archimateElement="a-bo-producto">
+        <bounds x="275" y="650" width="220" height="80"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v09-a-bo-pedido-4-2" archimateElement="a-bo-pedido">
+        <bounds x="520" y="650" width="220" height="80"/>
+      </child>
+      <documentation>Roles y servicios son interpretación analítica de cargos y procesos del caso; confirmar formalización. No se añaden compromisos SLA inexistentes.</documentation>
+    </element>
+  </folder>
+</archimate:model>

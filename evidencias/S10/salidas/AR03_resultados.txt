@@ -1,0 +1,19 @@
+ANDINA S10 — estimaciones académicas, no compromisos de ejecución
+capa
+Aplicación    4
+Datos         2
+Negocio       3
+Tecnología    3
+
+paquete  esfuerzo_dias_persona     brechas   dependencias
+   PT01                     14     B01;B02
+   PT02                     12         B03
+   PT03                     33     B04;B11 PT01;PT02;PT05
+   PT04                     30     B05;B06      PT02;PT03
+   PT05                     24 B07;B08;B09
+   PT06                     17     B10;B12
+
+Esfuerzo total: 130 días-persona
+Orden válido de brechas: B01 -> B03 -> B07 -> B08 -> B09 -> B10 -> B02 -> B11 -> B12 -> B04 -> B05 -> B06
+Oleadas de paquetes por dependencias (no calendario ni capacidad): [['PT01', 'PT02', 'PT05', 'PT06'], ['PT03'], ['PT04']]
+PT03 contiene B11 antes de B04; PT01 contiene B01 antes de B02; PT06 contiene B10 antes de B12.

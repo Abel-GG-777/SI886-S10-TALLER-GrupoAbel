@@ -1,0 +1,225 @@
+[
+  {
+    "id": "v01",
+    "name": "01 Actual proceso aplicacion",
+    "rows": [
+      [
+        "a-p1",
+        "a-p2",
+        "a-p3",
+        "a-p4",
+        "a-p5",
+        "a-p6"
+      ],
+      [
+        "a-s1",
+        "a-s2",
+        "a-s3",
+        "a-s4",
+        "a-s5",
+        "a-s6"
+      ],
+      [
+        "a-erp",
+        "a-ubic",
+        "a-movil",
+        "a-cobro",
+        "a-erp",
+        "a-erp"
+      ]
+    ]
+  },
+  {
+    "id": "v02",
+    "name": "02 Actual aplicaciones y datos",
+    "rows": [
+      [
+        "a-erp",
+        "a-movil",
+        "a-ose",
+        "a-portal"
+      ],
+      [
+        "a-ubic",
+        "a-conteo",
+        "a-precio",
+        "a-cobro"
+      ],
+      [
+        "a-d-cliente",
+        "a-d-producto",
+        "a-d-stock",
+        "a-d-pedido"
+      ],
+      [
+        "a-mesa",
+        "a-atencion",
+        "a-cambio"
+      ]
+    ]
+  },
+  {
+    "id": "v03",
+    "name": "03 Actual tecnologia",
+    "rows": [
+      [
+        "a-erp",
+        "a-movil",
+        "a-portal"
+      ],
+      [
+        "a-servidor",
+        "a-nube",
+        "a-hosting"
+      ],
+      [
+        "a-pc",
+        "a-moviles",
+        "a-disco"
+      ],
+      [
+        "a-lan",
+        "a-ilo"
+      ]
+    ]
+  },
+  {
+    "id": "v04",
+    "name": "04 Objetivo proceso aplicacion",
+    "rows": [
+      [
+        "t-p1",
+        "t-p2",
+        "t-p3",
+        "t-p4",
+        "t-p5",
+        "t-p6"
+      ],
+      [
+        "t-s1",
+        "t-s2",
+        "t-s3",
+        "t-s4",
+        "t-s5",
+        "t-s6"
+      ],
+      [
+        "t-erp",
+        "t-almacen",
+        "t-movil",
+        "t-erp",
+        "t-erp",
+        "t-erp"
+      ]
+    ]
+  },
+  {
+    "id": "v05",
+    "name": "05 Objetivo aplicaciones y datos",
+    "rows": [
+      [
+        "t-erp",
+        "t-movil",
+        "t-ose",
+        "t-portal"
+      ],
+      [
+        "t-almacen",
+        "t-integracion",
+        "t-mesa"
+      ],
+      [
+        "t-d-cliente",
+        "t-d-producto",
+        "t-d-stock",
+        "t-d-pedido"
+      ],
+      [
+        "t-atencion",
+        "t-cambio"
+      ]
+    ]
+  },
+  {
+    "id": "v06",
+    "name": "06 Objetivo tecnologia",
+    "rows": [
+      [
+        "t-erp",
+        "t-movil",
+        "t-portal"
+      ],
+      [
+        "t-servidor",
+        "t-nube",
+        "t-hosting"
+      ],
+      [
+        "t-backup",
+        "t-lan",
+        "t-ilo"
+      ]
+    ]
+  },
+  {
+    "id": "v07",
+    "name": "07 Integraciones actuales",
+    "rows": [
+      [
+        "a-erp"
+      ],
+      [
+        "a-movil",
+        "a-ose"
+      ]
+    ]
+  },
+  {
+    "id": "v08",
+    "name": "08 Integraciones propuestas",
+    "rows": [
+      [
+        "t-erp"
+      ],
+      [
+        "t-integracion"
+      ],
+      [
+        "t-almacen",
+        "t-movil",
+        "t-portal"
+      ]
+    ]
+  },
+  {
+    "id": "v09",
+    "name": "09 Negocio actual roles y servicios",
+    "rows": [
+      [
+        "a-actor-comercial",
+        "a-actor-almacen",
+        "a-actor-vendedores"
+      ],
+      [
+        "a-rol-comercial",
+        "a-rol-almacen",
+        "a-rol-vendedores"
+      ],
+      [
+        "a-p4",
+        "a-p2",
+        "a-p3"
+      ],
+      [
+        "a-bs-credito",
+        "a-bs-despacho",
+        "a-bs-venta"
+      ],
+      [
+        "a-bo-cliente",
+        "a-bo-producto",
+        "a-bo-pedido"
+      ]
+    ]
+  }
+]
